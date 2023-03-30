@@ -16,7 +16,7 @@
 
     <link rel="icon" href="./img/logos/lalehja-favicon.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -60,11 +60,14 @@
   </head>
   <body>
     <div class="infobar">
-      <a class="info" href="mailto:support@lalehja.com?subject=Business Enquiry"
+      <a
+        class="info"
+        href="mailto:support@lalehja.com?subject=Business Enquiry"
+        target="_blank"
         ><span uk-icon="mail" width="30"></span> &nbsp; support@lalehja.com
       </a>
       &nbsp; &nbsp;
-      <a class="info" href="tel:+919993602500"
+      <a class="info" href="https://wa.me/+919993602500"
         ><span uk-icon="whatsapp" width="30"></span>&nbsp; +91 9993602500</a
       >
     </div>
@@ -339,7 +342,9 @@
         <div class="container center-text">
           <span class="subheading">Why Choose Us</span>
           <h2 class="heading-secondary">
-            We are a premium service provider and have been
+            We are a premium service provider and have been delivering dedicated
+            logistics solutions, ensuring that our clients' needs are met with
+            utmost satisfaction.
           </h2>
           <div
             class="uk-margin uk-grid-match uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center"
@@ -355,10 +360,10 @@
                 />
                 <h2 class="crd-title">Authorised Bluedart Associate</h2>
                 <p class="whyChooseContent">
-                  La-Lehja Logistics is an authorised associate of BlueDart and
-                  DHL Courier service in Pitampur, Indore. With La-Lehja, you
-                  can be assured about your shipment reaching via India’s most
-                  trusted freight network.
+                  LaLehja Logistics is an authorised associate of BlueDart and
+                  DHL Courier service in Pitampur, Indore. With LaLehja
+                  Logistics, you can be assured about your shipment reaching via
+                  India’s most trusted freight network.
                 </p>
               </div>
             </div>
@@ -405,7 +410,7 @@
                   La-Lehja Logistics is a trusted logistic partner for many
                   small and large businesses and has completed over 1000+
                   shipments globally. Our team of experienced service experts
-                  are dedicated to providing the best service to the clients.
+                  are dedicated in providing the best service to the clients.
                 </p>
               </div>
             </div>
@@ -424,7 +429,13 @@
                 our team will reach out to you at the earliest.
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form
+                action="https://getform.io/f/184b11b7-e026-4049-bb82-d71109450e8f"
+                class="cta-form"
+                name="sign-up"
+                netlify
+                method="POST"
+              >
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -464,7 +475,6 @@
                     type="text"
                     placeholder="Company"
                     name="email"
-                    required
                   />
                 </div>
 
@@ -474,8 +484,9 @@
                     id="message"
                     type="test"
                     placeholder="Message"
+                    class="form-control"
                     name="message"
-                    required
+                    lengthen="8"
                   />
                 </div>
 
@@ -565,6 +576,14 @@
             </div>
           </div>
         </div>
+        <button class="whatsapp">
+          <span
+            uk-icon="whatsapp"
+            width="50"
+            style="color: #00a884"
+            href="https://wa.me/+919993602500"
+          ></span>
+        </button>
       </section>
     </main>
 
