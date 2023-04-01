@@ -41,14 +41,20 @@ allLinks.forEach(function (link) {
       });
 
     // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    if (href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Scroll to other links
+    if (href !== "#" ) {
+      window.open(href.toString(),'_blank');
     }
 
     // Close mobile naviagtion
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
+
   });
 });
 
